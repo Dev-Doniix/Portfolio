@@ -1404,10 +1404,32 @@ transform: scale(0.9);
 
 /* ===== RESPONSIVE ===== */
 
-/* 1920x1080 - Full HD - Scale down proportionally */
-@media (max-width: 1920px) and (min-width: 969px) {
+@media (min-width: 969px) and (max-width: 1920px) {
+    :root {
+        --desktop-scale: 0.82;
+        --desktop-offset: 2.5rem;
+    }
+
     body {
-        zoom: 0.75;
+        zoom: var(--desktop-scale);
+        transform-origin: top center;
+        height: calc(100vh / var(--desktop-scale));
+        min-height: calc(100vh / var(--desktop-scale));
+        padding-bottom: var(--desktop-offset);
+        overflow: hidden;
+    }
+
+    .hero,
+    section {
+        height: calc(100vh / var(--desktop-scale));
+    }
+
+    .hero {
+        padding-top: calc(8rem + var(--desktop-offset));
+    }
+
+    section {
+        padding-top: calc(8rem + var(--desktop-offset));
     }
 }
 
