@@ -33,6 +33,6 @@ It avoids harsh gradients or visual noise to ensure clarity and professional app
 If you’d like to collaborate or get in touch:
 X: https://x.com/dev_Doniix
 Website: https://doniixyt.github.io/Portfolio/
-GitHub: @DoniixYT
+GitHub: @doniix
 
 ⭐ Feel free to fork this project or use it as inspiration for your own portfolio!
