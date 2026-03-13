@@ -347,7 +347,7 @@ if (form) {
         submitBtn.textContent = 'Sending...';
         
         try {
-            const response = await fetch('https://casespin.fun/mail/send-email.php', {
+            const response = await fetch('https://leszczynowa5.pl/doniix/mail/send-email.php', {
                 method: 'POST',
                 body: formData
             });
